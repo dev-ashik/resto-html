@@ -23,6 +23,8 @@ closeBtn.onclick = () => {
   searchForm.classList.remove("active");
 };
 
+
+// swiper
 var swiper = new Swiper(".home-slider", {
   spaceBetween: 30,
   centeredSlides: true,
