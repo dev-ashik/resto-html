@@ -309,7 +309,6 @@ header .icons #menu-bars {
   display: block;
 }
 
-
 /* about */
 .about .row {
   display: flex;
@@ -333,13 +332,13 @@ header .icons #menu-bars {
 .about .row .content h3 {
   color: var(--black);
   font-size: 4rem;
-  padding: .5rem 0;
+  padding: 0.5rem 0;
 }
 
 .about .row .content p {
   color: var(--light-color);
   font-size: 1.5rem;
-  padding: .5rem 0;
+  padding: 0.5rem 0;
   line-height: 2;
 }
 
@@ -348,13 +347,13 @@ header .icons #menu-bars {
   gap: 1rem;
   flex-wrap: wrap;
   padding: 1rem 0;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }
 
 .about .row .content .icon-container .icons {
   background: #eee;
-  border-radius: .5rem;
-  border: .1rem solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -382,12 +381,12 @@ header .icons #menu-bars {
 }
 
 .menu .box-container .box {
- background: #fff;
- border: .1rem solid rgba(0, 0, 0, 0.2);
- border-radius: .5rem; 
- box-shadow: var(--box-shadow);
- display: flex;
- flex-direction: column;
+  background: #fff;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
+  display: flex;
+  flex-direction: column;
 }
 
 .menu .box-container .box .image {
@@ -401,7 +400,7 @@ header .icons #menu-bars {
 .menu .box-container .box .image img {
   height: 100%;
   width: 100%;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   object-fit: cover;
 }
 
@@ -429,7 +428,7 @@ header .icons #menu-bars {
   padding-top: 0;
 }
 
-.menu .box-container .box .content .stars{
+.menu .box-container .box .content .stars {
   padding-bottom: 1rem;
 }
 
@@ -445,7 +444,7 @@ header .icons #menu-bars {
 .menu .box-container .box .content p {
   color: var(--light-color);
   font-size: 1.7rem;
-  padding: .5rem 0;
+  padding: 0.5rem 0;
   line-height: 1.5;
 }
 
@@ -459,7 +458,6 @@ header .icons #menu-bars {
   color: var(--green);
   margin-left: 1rem;
   font-size: 2.5rem;
-
 }
 
 /* review */
@@ -467,8 +465,8 @@ header .icons #menu-bars {
 .review .slide {
   padding: 2rem;
   box-shadow: var(--box-shadow);
-  border: .1rem solid rgba(0, 0, 0, 0.2);
-  border-radius: .5rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
   position: relative;
 }
 
@@ -497,7 +495,7 @@ header .icons #menu-bars {
 .review .slide .user h3 {
   color: var(--black);
   font-size: 2rem;
-  padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
 }
 
 .review .slide .user i {
@@ -514,9 +512,9 @@ header .icons #menu-bars {
 /* order */
 .order form {
   max-width: 90rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   box-shadow: var(--box-shadow);
-  border: .1rem solid rgba(0, 0, 0, 0.2);
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
   background: #fff;
   padding: 1.5rem;
   margin: 0 auto;
@@ -534,7 +532,7 @@ header .icons #menu-bars {
 
 .order form .inputBox .input span {
   display: block;
-  padding: .5rem 0;
+  padding: 0.5rem 0;
   font-size: 1.5rem;
   color: var(--light-color);
 }
@@ -553,7 +551,7 @@ header .icons #menu-bars {
 
 .order form .inputBox .input input:focus,
 .order form .inputBox .input textarea:focus {
-  border: .1rem solid var(--green);
+  border: 0.1rem solid var(--green);
 }
 
 .order form .inputBox .input textarea {
@@ -573,14 +571,14 @@ header .icons #menu-bars {
 }
 
 .footer .box-container .box h3 {
-  padding: .5rem 0;
-  font-size: 1.5rem;
+  padding: 0.5rem 0;
+  font-size: 2.5rem;
   color: var(--black);
 }
 
 .footer .box-container .box a {
   display: block;
-  padding: .5rem 0;
+  padding: 0.5rem 0;
   font-size: 1.5rem;
   color: var(--light-color);
 }
@@ -590,10 +588,42 @@ header .icons #menu-bars {
   text-decoration: underline;
 }
 
+.footer .credit {
+  text-align: center;
+  border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+  font-size: 2rem;
+  color: var(--black);
+  padding: 0.5rem;
+  padding-top: 1.5rem;
+  margin-top: 1.5rem;
+}
 
+.footer .credit span {
+  color: var(--green);
+}
 
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10000;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
 
+.loader-container img {
+  width: 35rem;
+}
 
+.loader-container.fade-out {
+  top: 100%;
+  opacity: 0;
+}
 
 /* media queries */
 
